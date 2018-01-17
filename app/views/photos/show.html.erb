@@ -1,5 +1,5 @@
 <%= @photo.title %>
 <%= @photo.date %>
-<%= image_tag(@photo.file_location.url, style: 'max-height:100%;max-width:100%') %>
+<%= image_tag @photo.file_location.url, style: "max-width:100% ,max-height:100%", class: "img-thumbnail" %>
 <% simple_format(@photo.description) %>
-<%= link_to 'Back to index', photos_path %>
+<p><%= link_to 'Back to index', photos_path %></p>
